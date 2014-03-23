@@ -1,14 +1,7 @@
-angular.module('moocs4u', ['ngRoute'])
-    .config(function ($routeProvider) {
-        $routeProvider
-            .when('/about',
-            {
-                controller: 'NavCtrl',
-                templateUrl: '/partials/about.tpl.html'
-
-            })
-            .otherwise({ redirectTo: '/about' });
-    })
-    .controller('NavCtrl', function ($scope,$http,$timeout,$location) {
-
-    })
+angular.module('moocs4u', ["ngRoute","mobile-angular-ui","mobile-angular-ui.touch","mobile-angular-ui.scrollable"])
+    .config(function($routeProvider) {
+        $routeProvider.when('/', {
+            // ...
+        });
+        // ...
+    });
